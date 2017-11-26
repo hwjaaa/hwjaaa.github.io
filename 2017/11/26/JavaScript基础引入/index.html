@@ -123,48 +123,47 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >script</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >JavaScript基础引入</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="Java-script赋值以及运算比较"><a href="#Java-script赋值以及运算比较" class="headerlink" title="Java script赋值以及运算比较"></a>Java script赋值以及运算比较</h2><h3 id="js变量的声明与赋值"><a href="#js变量的声明与赋值" class="headerlink" title="js变量的声明与赋值"></a>js变量的声明与赋值</h3><ul>
-<li><p>先声明变量后赋值的方法</p>
-<h4 id="例："><a href="#例：" class="headerlink" title="例："></a>例：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num;</div><div class="line">num = <span class="number">5</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> --- 用于声明变量的关键字</div><div class="line">num --- 变量名</div></pre></td></tr></table></figure>
+                <h2 id="javascript基础"><a href="#javascript基础" class="headerlink" title="javascript基础"></a>javascript基础</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>轻量级、直译式客户端脚本语言。</li>
+<li>可被所有浏览器执行，实现网页的劢态功能。</li>
+<li>揑入 HTML 页面后，可由所有的现代浏览器执行<h4 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h4></li>
+<li>操作页面元素，动态改变页面内容动态改变表格内容</li>
+<li>编写页面动态效果轮播图层的切换 和 树形菜单等</li>
+<li>数据的客户端验证－减轻服务器端压力注册表单验证</li>
+<li>通过ajax和后端语言实现数据交互<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3></li>
+<li>ECMAscript<ul>
+<li>E 元素</li>
+<li>C 类名</li>
+<li>M 注释</li>
+<li>A 属性</li>
+</ul>
 </li>
-<li><p>同时声明和赋值变量</p>
-<figure class="highlight java"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var num=<span class="number">5</span>;</div></pre></td></tr></table></figure>
+<li>BON(浏览器对象模型)</li>
+<li>DOM(文档对象模型)<h3 id="javascript-使用方法"><a href="#javascript-使用方法" class="headerlink" title="javascript 使用方法"></a>javascript 使用方法</h3></li>
+<li><p>html内嵌javascript代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt; //JavaScript 语句&lt;/script &gt;</div></pre></td></tr></table></figure>
 </li>
-<li><p>不声明变量直接赋值</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">num = <span class="number">5</span>;</div></pre></td></tr></table></figure>
+<li><p>外部JS文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;hello.js&quot; language=&quot;javascript&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>行内编写方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input name=&quot;btn&quot; type=&quot;button&quot; value=&quot;弹出消息框&quot;onclick=&quot;javascript:alert(&apos;欢迎你&apos;);&quot;/&gt;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<blockquote>
-<p>注意：不声明变量直接赋值的变量为全局变量</p>
-</blockquote>
-<h2 id="js运算"><a href="#js运算" class="headerlink" title="js运算"></a>js运算</h2><h4 id="运算符号"><a href="#运算符号" class="headerlink" title="运算符号"></a>运算符号</h4><ul>
-<li>算数运算符(+,-,*，/,%,++,–)</li>
-<li>赋值运算符(=,+=,-=,*=,/=,%=)</li>
-<li>字符串连接符（+）</li>
-<li>优先级 <blockquote>
-<p>优先级：（）&gt;算术运算符（先乘除后加减）&gt;赋值运算符</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="js比较"><a href="#js比较" class="headerlink" title="js比较"></a>js比较</h2><h4 id="比较符号"><a href="#比较符号" class="headerlink" title="比较符号"></a>比较符号</h4><ul>
-<li>比较运算符(&gt;,&lt;,&gt;=,&lt;=,==,===,!=,!==)</li>
-<li>逻辑运算符(&amp;&amp;,||,!)</li>
-<li>三目运算符:<blockquote>
-<p>条件?语句1:语句2</p>
-</blockquote>
-</li>
-</ul>
-<blockquote>
-<p>例：5&gt;4?alert(“yes”):alert(“no”)</p>
-</blockquote>
-<h2 id="js作用域及变量"><a href="#js作用域及变量" class="headerlink" title="js作用域及变量"></a>js作用域及变量</h2><ul>
-<li>作用域：只有函数带有作用域，一个函数就是一个作用域</li>
-<li>全局变量：在整个js中都可以被使用的变量，在全局作用域中声明的变量</li>
-<li>局部变量：只可以在局部作用域中使用的变量；在函数（局部作用域）声明的变量就是局部变量</li>
+<h3 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h3><ul>
+<li>onload事件:是在页面或图片加载完成后立即执行的事件获取元素</li>
+<li>getElementById()：获取指定 ID 的第一个对象引用</li>
+<li>getElementsByName()：通过NAME属性获Document中指定名称对象的集合</li>
+<li>getElementsByTagName()：使用指定的标签名返回所有的元<br>素，这些元素是您在使用此方法时所处的元素的后代<h3 id="输出方式"><a href="#输出方式" class="headerlink" title="输出方式"></a>输出方式</h3></li>
+<li>console.log</li>
+<li>document.write</li>
+<li>document。body。innerHTML<h3 id="代码注释方式"><a href="#代码注释方式" class="headerlink" title="代码注释方式"></a>代码注释方式</h3></li>
+<li>单行注释 //</li>
+<li>多行注释 /**/</li>
 </ul>
 
             </div>
@@ -228,8 +227,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/11/26/script/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/11/26/script/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2017/11/26/JavaScript基础引入/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/11/26/JavaScript基础引入/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
