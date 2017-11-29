@@ -123,47 +123,55 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >JavaScript基础引入</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >js流程控制</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="javascript基础"><a href="#javascript基础" class="headerlink" title="javascript基础"></a>javascript基础</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
-<li>轻量级、直译式客户端脚本语言。</li>
-<li>可被所有浏览器执行，实现网页的劢态功能。</li>
-<li>揑入 HTML 页面后，可由所有的现代浏览器执行<h4 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h4></li>
-<li>操作页面元素，动态改变页面内容动态改变表格内容</li>
-<li>编写页面动态效果轮播图层的切换 和 树形菜单等</li>
-<li>数据的客户端验证－减轻服务器端压力注册表单验证</li>
-<li>通过ajax和后端语言实现数据交互<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3></li>
-<li>ECMAscript<ul>
-<li>E 元素</li>
-<li>C 类名</li>
-<li>M 注释</li>
-<li>A 属性</li>
-</ul>
+                <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>所谓的“流程”就是程序代码执行的顺序。在任何一种语言中，程序控制是必需的。<br>它能使整个程序减少混乱，使之顺利按照其一定的方式执行。<br>JavaScript常用的控制流程有3种基本结构：顺序结构、选择结构、<br>循环结构顺序结构,正常情况下，程序中的语句是按照书写顺序执行的，<br>这种结构成为顺序结构。前面所例丼的程序都是顺序结构的程序。</p>
+</blockquote>
+<h3 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h3><blockquote>
+<p>选择结构主要用判断语句来实现根据一定的条件决定进一步执行那些语句。<br>JavaScript提供了两种类型的选择结果语句，也成为判断语句：<br>if语句和switch语句。一般来讲if语句用于从两条执行路线中选择其一执行,<br>而switch语句用于从多条执行路线中选择其一执行。</p>
+</blockquote>
+<ul>
+<li><p>if语句</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(条件)&#123;</div><div class="line"><span class="comment">//JavaScript代码;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li>BON(浏览器对象模型)</li>
-<li>DOM(文档对象模型)<h3 id="javascript-使用方法"><a href="#javascript-使用方法" class="headerlink" title="javascript 使用方法"></a>javascript 使用方法</h3></li>
-<li><p>html内嵌javascript代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt; //JavaScript 语句&lt;/script &gt;</div></pre></td></tr></table></figure>
+<li><p>if条件语句</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(条件)&#123;</div><div class="line"><span class="comment">//JavaScript代码;</span></div><div class="line">&#125;<span class="keyword">else</span>&#123;</div><div class="line"><span class="comment">//JavaScript代码;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>外部JS文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;hello.js&quot; language=&quot;javascript&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<li><p>If…else if…else语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">if (条件 1)</div><div class="line">&#123;</div><div class="line">当条件 1 为 true 时执行的代码</div><div class="line">&#125;</div><div class="line">else if (条件 2)</div><div class="line">&#123;</div><div class="line">当条件 2 为 true 时执行的代码</div><div class="line">&#125;</div><div class="line">else</div><div class="line">&#123;</div><div class="line">当条件 1 和 条件 2 都不为 true 时执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>行内编写方式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input name=&quot;btn&quot; type=&quot;button&quot; value=&quot;弹出消息框&quot;onclick=&quot;javascript:alert(&apos;欢迎你&apos;);&quot;/&gt;</div></pre></td></tr></table></figure>
+<li><p>switch语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">switch(n)</div><div class="line">&#123; case 1:</div><div class="line">执行代码块 1</div><div class="line">break;</div><div class="line">case 2:</div><div class="line">执行代码块 2</div><div class="line">break;</div><div class="line">default:</div><div class="line">n 与 case 1 和 case 2 不同时执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h3><ul>
-<li>onload事件:是在页面或图片加载完成后立即执行的事件获取元素</li>
-<li>getElementById()：获取指定 ID 的第一个对象引用</li>
-<li>getElementsByName()：通过NAME属性获Document中指定名称对象的集合</li>
-<li>getElementsByTagName()：使用指定的标签名返回所有的元<br>素，这些元素是您在使用此方法时所处的元素的后代<h3 id="输出方式"><a href="#输出方式" class="headerlink" title="输出方式"></a>输出方式</h3></li>
-<li>console.log</li>
-<li>document.write</li>
-<li>document。body。innerHTML<h3 id="代码注释方式"><a href="#代码注释方式" class="headerlink" title="代码注释方式"></a>代码注释方式</h3></li>
-<li>单行注释 //</li>
-<li>多行注释 /**/</li>
+<h3 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h3><blockquote>
+<p>实际情况中，需要根据条件或计数器来重复执行多行程序代码的能力，利用循环语句来实现。<br>在JavaScript中有两种主要类型的循环语句，for循环和while循环</p>
+</blockquote>
+<ul>
+<li><p>for语句</p>
+<ul>
+<li>语句 1 在循环（代码块）开始前执行</li>
+<li>语句 2 定义运行循环（代码块）的条件</li>
+<li>语句 3 在循环（代码块）已被执行之后执行<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">for (语句 1; 语句 2; 语句 3)</div><div class="line">&#123;</div><div class="line">被执行的代码块</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>while语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">while (条件)</div><div class="line">&#123;</div><div class="line">需要执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Do…While语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">do</div><div class="line">&#123;</div><div class="line">需要执行的代码</div><div class="line">&#125;</div><div class="line">while (条件);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>当循环条件表达式值为false时，循环语句才能结束,JavaScript包含有break和continue语句。<br>这两个语句可用于改变循环的流程。</p>
+</blockquote>
+<ul>
+<li>Break语句 中断循环</li>
+<li>Continue语句 开始下一次循环</li>
 </ul>
 
             </div>
@@ -227,8 +235,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/11/26/JavaScript基础引入/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/11/26/JavaScript基础引入/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2017/11/29/js流程控制/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/11/29/js流程控制/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
