@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    韩
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/haruto/haruto.model.json",0.5)</script>
+  
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/H5/">H5</a></li><li><a class="category-link" href="/categories/Markdown/">Markdown</a></li><li><a class="category-link" href="/categories/html-css/">html+css</a></li><li><a class="category-link" href="/categories/js/">js</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript函数、对象/类</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="javascript函数"><a href="#javascript函数" class="headerlink" title="javascript函数"></a>javascript函数</h2><h4 id="javascript函数定义的方法："><a href="#javascript函数定义的方法：" class="headerlink" title="javascript函数定义的方法："></a>javascript函数定义的方法：</h4><ul>
+<li><p>不带参数的函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function functionname()</div><div class="line">&#123;</div><div class="line">//这里是要执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>带参数的函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">unction myFunction(var1,var2)</div><div class="line">&#123;</div><div class="line">//这里是要执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>调用不带参数的函数</p>
+<ul>
+<li><code>myFunction()</code></li>
+</ul>
+</li>
+<li>调用带参数的函数<ul>
+<li><code>myFunction(argument1,argument2)</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>在调用函数时，您可以向其传递值，这些值被称为参数。您可以发送任意多的参数，由逗号 (,) 分隔</strong></p>
+<h4 id="带有返回值的函数"><a href="#带有返回值的函数" class="headerlink" title="带有返回值的函数"></a>带有返回值的函数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function myFunction()</div><div class="line">&#123;</div><div class="line">var x=5;</div><div class="line">return x;</div><div class="line">&#125;</div><div class="line">var myVar=myFunction();</div></pre></td></tr></table></figure>
+<blockquote>
+<p>myVar 变量的值是 5也就是上面的函数返回值5</p>
+</blockquote>
+<h4 id="匿名函数-匿名函数就是没有实际名字的函数"><a href="#匿名函数-匿名函数就是没有实际名字的函数" class="headerlink" title="匿名函数(匿名函数就是没有实际名字的函数)"></a>匿名函数(匿名函数就是没有实际名字的函数)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//匿名函数</div><div class="line">(function() &#123;</div><div class="line">alert(&apos;water&apos;);</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+<ul>
+<li>匿名函数的调用<blockquote>
+<p>要调用一个函数，我们必须要有方法定位它，引用它。<br>所以，我们会需要帮它找一个名字。</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var abc=function(x,y)&#123;</div><div class="line">return x+y;</div><div class="line">&#125;</div><div class="line">alert(abc(2,3));</div></pre></td></tr></table></figure>
+<h2 id="js对象-类"><a href="#js对象-类" class="headerlink" title="js对象/类"></a>js对象/类</h2><ul>
+<li>对象<ul>
+<li>面向对象编程的核心</li>
+<li>表示现实世界中的实体</li>
+<li>为计算机应用程序提供实用基础</li>
+<li>完成特定任务</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>对象是存在的具体实体，具有明确定义的状态和行为。<br>对象：用来描述客观事物的一个实体，由一组属性和方法构成</p>
+</blockquote>
+<ul>
+<li><p>类</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">class1</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="comment">//类成员的定义及构造函数</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个学生类</p>
+</li>
+<li>每个学生都有年龄、姓名、班级和爱好。用类的思想编写学生类<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Students</span> (<span class="params">name,age,grade,hobby</span>)</span>&#123;</div><div class="line"><span class="keyword">this</span>.name=name; <span class="comment">//姓名</span></div><div class="line"><span class="keyword">this</span>. age=age; <span class="comment">//年龄</span></div><div class="line"><span class="keyword">this</span>. grade=grade; <span class="comment">//班级</span></div><div class="line"><span class="keyword">this</span>. Hobby=hobby; <span class="comment">//爱好</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>为Students引用类型创建几个属性getName和setName方法：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Students.prototype.getName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">&#125;</div><div class="line">Students.prototype.setName=<span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</div><div class="line"><span class="keyword">this</span>.name=name;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>创建和使用引用类型的实例</li>
+</ul>
+<blockquote>
+<p>创建对象语法：var 对象名 = new 类名();</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">// 使用对象示例：</div><div class="line">var Student01=new Students(&quot;张三&quot;,&quot;20&quot;,&quot;2&quot;,&quot;唱歌&quot;);</div><div class="line">var Student02=new Students(&quot;李四&quot;,&quot;30&quot;,&quot;3&quot;,&quot;跳舞&quot;)</div></pre></td></tr></table></figure>
+<ul>
+<li>引用对象成员：使用“ .” 进行以下操作 类的创建不引用</li>
+</ul>
+<blockquote>
+<p>属性：对象名.属性<br>方法：对象名.方法名()</p>
+</blockquote>
+<ul>
+<li>调用getName ()方法及age属性等，并将结果输出到页面上：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.write(&quot;我叫：&quot;+Student01.getName()+&quot;年龄:&quot;+Student01.age+&quot;,所在班级：&quot;+Student01.getGrade()+&quot;，我的爱好是：&quot;+Student01.getHobby()+&quot;。 &quot;);</div></pre></td></tr></table></figure>
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/12/05/javascript函数、对象-类/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/12/05/javascript函数、对象-类/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
