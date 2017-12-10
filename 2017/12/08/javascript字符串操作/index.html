@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    韩
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/haruto/haruto.model.json",0.5)</script>
+  
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/H5/">H5</a></li><li><a class="category-link" href="/categories/Markdown/">Markdown</a></li><li><a class="category-link" href="/categories/html-css/">html+css</a></li><li><a class="category-link" href="/categories/js/">js</a></li><li><a class="category-link" href="/categories/微信小程序/">微信小程序</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(../img/aa.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >javascript字符串操作</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="字符串操作"><a href="#字符串操作" class="headerlink" title="字符串操作"></a>字符串操作</h2><blockquote>
+<p>“字符串对象”是Javascript内置的字符块处理对象，用于定义及处理字符串。</p>
+</blockquote>
+<h4 id="声明字符串的俩种方法"><a href="#声明字符串的俩种方法" class="headerlink" title="声明字符串的俩种方法"></a>声明字符串的俩种方法</h4><ul>
+<li>var str1 = “string1” ;</li>
+<li>var str2 = new String(“string2”);<blockquote>
+<p>两种方式的差别:str1是一个字符串，类型是string ，<br>而str2则是对象“ string2”的引用，类型是对象。如果引用被修改，str2也会被修改.</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="字符串操作方法"><a href="#字符串操作方法" class="headerlink" title="字符串操作方法"></a>字符串操作方法</h4><p>1、charAt() 返回指定位置的字符<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,love,you,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> theChar = myStr.charAt(<span class="number">8</span>);<span class="comment">// "o",同样从0开始</span></div></pre></td></tr></table></figure></p>
+<p>2、charCodeAt() 返回指定位置的字符的Unicode编码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,love,you,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> theChar = myStr.charCodeAt(<span class="number">8</span>); <span class="comment">//111</span></div></pre></td></tr></table></figure></p>
+<p>3、search() 用于检索字符串中指定的子字符串<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str=<span class="string">"Hello world!"</span></div><div class="line"><span class="built_in">document</span>.write(str.search(<span class="string">"world"</span>)) <span class="comment">//6</span></div></pre></td></tr></table></figure></p>
+<p>4、replace() 查找匹配指定的字符串，然后用新字符串代替匹配的字符串<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str=<span class="string">"Visit aaa!"</span></div><div class="line"><span class="built_in">document</span>.write(str.replace(<span class="regexp">/Microsoft/</span>,<span class="string">"aaa"</span>))</div></pre></td></tr></table></figure></p>
+<p>5、concat() 将两个或多个字符的文本组合起来，返回一个新的字符串<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str1 = <span class="string">"I,love,you!"</span>;</div><div class="line"><span class="keyword">var</span> str2 = <span class="string">"Do,you,love,me?"</span>;</div><div class="line"><span class="keyword">var</span> str = str1.concat(str2);<span class="comment">//"I,love,you!Do,you,love,me?"</span></div></pre></td></tr></table></figure></p>
+<p>6、使用加号链接字符串。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">newStr = “string1”+”string2”</div></pre></td></tr></table></figure></p>
+<p>7、indexOf() 返回字符串中一个子串第一处出现的索引。如果没有匹配项，返回 -1<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,Love,you,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> index = myStr.indexOf(<span class="string">"you"</span>); <span class="comment">// 7 ,基于0开始,找不到返回-1</span></div></pre></td></tr></table></figure></p>
+<p>8、lastIndexOf() 返回字符串中一个子串最后一处出现的索引，如果没有匹配项，返回 -1<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,Love,you,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> index = myStr.lastIndexOf(<span class="string">"you"</span>); <span class="comment">// 14</span></div></pre></td></tr></table></figure></p>
+<p>9、slice() 提取字符串的一部分，并返回一个新字符串。<br>两个参数，第一个为起始位置，第二个为终止位置（留头不留尾），如果没有end，就取到末尾<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,love,you,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> subStr = myStr.slice(<span class="number">1</span>,<span class="number">5</span>);<span class="comment">//",lov"</span></div></pre></td></tr></table></figure></p>
+<p>10、substring() 返回字符串的一个子串。<br>传入参数是起始位置和结束位置。（留头不留尾），如果没有end，就取到末尾<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,love,you,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> subStr = myStr.substring(<span class="number">1</span>,<span class="number">5</span>); <span class="comment">//",lov"</span></div></pre></td></tr></table></figure></p>
+<p>11、substr()第二个参数代表截取的字符串最大长度<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,love,you,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> subStr = myStr.substr(<span class="number">1</span>,<span class="number">5</span>); <span class="comment">//",love"</span></div></pre></td></tr></table></figure></p>
+<p>12、split() 通过将字符串划分成子串，将一个字符串做成一个字符串数组。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,Love,You,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> substrArray = myStr .split(<span class="string">","</span>); <span class="comment">// ["I", "Love", "You", "Do", "you", "love", "me"];</span></div><div class="line"><span class="keyword">var</span> arrayLimited = myStr .split(<span class="string">","</span>, <span class="number">3</span>); <span class="comment">// ["I", "Love", "You"];</span></div></pre></td></tr></table></figure></p>
+<p>13、Length 返回字符串的长度（其包含的字符的个数）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,Love,You,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> myStrLength = myStr.length; <span class="comment">//25</span></div></pre></td></tr></table></figure></p>
+<p>14、toLowerCase() 将整个字符串转成小写字母<br>toUpperCase() 将整个字符串转成大写字母<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myStr = <span class="string">"I,love,you,Do,you,love,me"</span>;</div><div class="line"><span class="keyword">var</span> lowCaseStr = myStr.toLowerCase();<span class="comment">//"i,love,you,do,you,love,me";</span></div><div class="line"><span class="keyword">var</span> upCaseStr = myStr.toUpperCase();<span class="comment">//"I,LOVE,YOU,DO,YOU,LOVE,ME"</span></div></pre></td></tr></table></figure></p>
+<p>15、转义字符 \</p>
+<blockquote>
+<p>我们平时想输出一个双引号（“”）我们会这样写：<br>document.write(“””);<br>但是这样写是错诨的,所以我们需要用到转义字符：<br>document.write(“ \””);</p>
+</blockquote>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/12/08/javascript字符串操作/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/12/08/javascript字符串操作/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
