@@ -122,61 +122,91 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://hwjaaa.github.io/img/this.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >this指向</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://hwjaaa.github.io/img/dom.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >DOM</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="This指向"><a href="#This指向" class="headerlink" title="This指向"></a>This指向</h2><h4 id="this概念"><a href="#this概念" class="headerlink" title="this概念 :"></a>this概念 :</h4><blockquote>
-<p>this是Javascript诧言的一个关键字它代表函数运行时，自劢生成的一个内部对象，只能在函数内部使用</p>
+                <h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><h4 id="1-分析DOM节点"><a href="#1-分析DOM节点" class="headerlink" title="1.分析DOM节点"></a>1.分析DOM节点</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;title&gt;DOM 教程&lt;<span class="regexp">/title&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;h1&gt;DOM 第一节&lt;<span class="regexp">/h1&gt; 、</span></div><div class="line"><span class="regexp">&lt;p&gt;Hello world!&lt;/</span>p&gt;</div><div class="line">&lt;<span class="regexp">/body&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>html&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>分析父、子和同胞节点：·<html> 节点没有父节点，它是根节点<br>head 和 body 的父节点是html 节点 ；文本节点 “ Hello world!”的父节点是 <p> 节点</p>
+</html></p></blockquote>
+<h4 id="2-获取节点"><a href="#2-获取节点" class="headerlink" title="2.获取节点"></a>2.获取节点</h4><ul>
+<li>由id获取 getElementById<ul>
+<li>语法：node.getElementById(“id”);</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>例:</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"intro"</span>);</div></pre></td></tr></table></figure>
+<ul>
+<li>由class获取 getElementsByClassName<ul>
+<li>语法：node. getElementsByClassName(“class”);<blockquote>
+<p>例：</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>. getElementsByClassName(<span class="string">" class "</span>);</div></pre></td></tr></table></figure>
+<ul>
+<li>由标签名获取 getElementsByTagName<ul>
+<li>语法：node. getElementsByTagName(“h1 “);</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>例：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document. getElementsByTagName(&quot;h1&quot;);</div></pre></td></tr></table></figure>
+<h4 id="3-查看节点类型"><a href="#3-查看节点类型" class="headerlink" title="3.查看节点类型"></a>3.查看节点类型</h4><ul>
+<li>语法：</li>
+</ul>
+<blockquote>
+<p>nodeObject.[nodeType][nodeName ][nodeValue ]</p>
 </blockquote>
 <ul>
-<li>四种情况下的this指向:<ul>
-<li>全局作用域中的this指向window</li>
-<li>纯粹的函数调用: this指向调用函数的对象</li>
-<li>作为对象方法的调用: this指向调用这个方法的对象</li>
-<li>作为构造函数调用: this指向构造函数的实例</li>
+<li><p>nodeType 返回以数字值返回指定节点的节点类型。如果节点是元素节点，则返回 1。如果节点是属性节点，则返回 2。</p>
+</li>
+<li><p>nodeName 返回节点名称（大写的标签名）</p>
+</li>
+<li>nodeValue 文本节点返回文本内容，其他节点返回null</li>
+</ul>
+<h4 id="4-DOM属性获取与设置"><a href="#4-DOM属性获取与设置" class="headerlink" title="4.DOM属性获取与设置"></a>4.DOM属性获取与设置</h4><ul>
+<li>获取方法：<ul>
+<li>element[attributename]</li>
+<li>element . attributename</li>
+<li>getAttribute( attributename )</li>
+</ul>
+</li>
+<li>设置属性：<ul>
+<li>setAttribute( attributename, attri</li>
+</ul>
+</li>
+<li>删除属性：<ul>
+<li>removeAttribute( attributename)</li>
 </ul>
 </li>
 </ul>
-<h4 id="修改this指向"><a href="#修改this指向" class="headerlink" title="修改this指向:"></a>修改this指向:</h4><ul>
-<li>使用call()方法</li>
+<h4 id="4-常用属性："><a href="#4-常用属性：" class="headerlink" title="4.常用属性："></a>4.常用属性：</h4><ul>
+<li>className 类名</li>
+<li>offsetWidth 宽</li>
+<li>offsetHeight 高</li>
+<li>offsetLeft,offsetTop获取距离第一个定位父节点左上角的距离</li>
 </ul>
-<ol>
-<li>语法：call(thisObj，Object)</li>
-<li>定义：调用一个对象的一个方法，以另一个对象替换当前对象 </li>
-<li>实例<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a,b</span>)  </span></div><div class="line"><span class="function"></span>&#123;  </div><div class="line">    alert(a+b);  </div><div class="line">&#125;  </div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sub</span>(<span class="params">a,b</span>)  </span></div><div class="line"><span class="function"></span>&#123;  </div><div class="line">    alert(a-b);  </div><div class="line">&#125;  </div><div class="line">  </div><div class="line">add.call(sub,<span class="number">3</span>,<span class="number">1</span>);</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<blockquote>
-<p>这个例子中的意思就是用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4);<br><strong> 注意：js 中的函数其实是对象，函数名是对 Function 对象的引用。</strong></p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params"></span>)</span>&#123;    </div><div class="line">    <span class="keyword">this</span>.name = <span class="string">"Animal"</span>;    </div><div class="line">    <span class="keyword">this</span>.showName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;    </div><div class="line">        alert(<span class="keyword">this</span>.name);    </div><div class="line">    &#125;    </div><div class="line">    </div><div class="line">&#125;    </div><div class="line">  </div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params"></span>)</span>&#123;    </div><div class="line">    <span class="keyword">this</span>.name = <span class="string">"Cat"</span>;    </div><div class="line">&#125;    </div><div class="line">   </div><div class="line"><span class="keyword">var</span> animal = <span class="keyword">new</span> Animal();    </div><div class="line"><span class="keyword">var</span> cat = <span class="keyword">new</span> Cat();    </div><div class="line">    </div><div class="line"><span class="comment">//通过call或apply方法，将原本属于Animal对象的showName()方法交给对象cat来使用了。    </span></div><div class="line"><span class="comment">//输入结果为"Cat"    </span></div><div class="line">animal.showName.call(cat,<span class="string">","</span>);    </div><div class="line"><span class="comment">//animal.showName.apply(cat,[]);</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>call 的意思是把 animal 的方法放到cat上执行，原来cat是没有showName() 方法，<br>现在是把animal 的showName()方法放到 cat上来执行，所以this.name 应该是 Cat</p>
-</blockquote>
-<ul>
-<li>使用apply()方法</li>
+<h4 id="5-操作子节点"><a href="#5-操作子节点" class="headerlink" title="5.操作子节点"></a>5.操作子节点</h4><ul>
+<li>创建节点 createElement( )</li>
+<li>子节点的增删改<ul>
+<li>appendChild 在DOM子集最后添加子节点</li>
+<li>insertBefore 在指定的已有子节点之前插入新的子节点</li>
+<li>removeChild 删除一个节点</li>
+<li>replaceChild 替换节点</li>
 </ul>
-<ol>
-<li>语法：apply(thisObj，[argArray])</li>
-<li>定义：应用某一对象的一个方法，用另一个对象替换当前对象</li>
-<li>实例<pre><code class="javascript"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age</span>) </span>{   
- <span class="keyword">this</span>.name=name; <span class="keyword">this</span>.age=age;   
-}   
-<span class="comment">/*定义一个学生类*/</span>   
-functionStudent(name,age,grade) {   
- Person.apply(<span class="keyword">this</span>,<span class="built_in">arguments</span>); <span class="keyword">this</span>.grade=grade;   
-}   
-<span class="comment">//创建一个学生类   </span>
-<span class="keyword">var</span> student=<span class="keyword">new</span> Student(<span class="string">"qian"</span>,<span class="number">21</span>,<span class="string">"一年级"</span>);   
-<span class="comment">//测试   </span>
-alert(<span class="string">"name:"</span>+student.name+<span class="string">"\n"</span>+<span class="string">"age:"</span>+student.age+<span class="string">"\n"</span>+<span class="string">"grade:"</span>+student.grade);   
-<span class="comment">//大家可以看到测试结果name:qian age:21 grade:一年级</span>
-</code></pre>
 </li>
-</ol>
-<h4 id="使用new关键字"><a href="#使用new关键字" class="headerlink" title="使用new关键字"></a>使用new关键字</h4>
+</ul>
+
             </div>
 
             <!-- Post Comments -->
@@ -238,8 +268,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/12/10/this指向/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/12/10/this指向/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2017/12/11/DOM/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/12/11/DOM/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 

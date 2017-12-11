@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    韩
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/haruto/haruto.model.json",0.5)</script>
+  
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/H5/">H5</a></li><li><a class="category-link" href="/categories/Markdown/">Markdown</a></li><li><a class="category-link" href="/categories/html-css/">html+css</a></li><li><a class="category-link" href="/categories/js/">js</a></li><li><a class="category-link" href="/categories/微信小程序/">微信小程序</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://hwjaaa.github.io/img/math.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Math对象和Date对象</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="Math对象"><a href="#Math对象" class="headerlink" title="Math对象"></a>Math对象</h2><h4 id="1-作用"><a href="#1-作用" class="headerlink" title="1.作用"></a>1.作用</h4><blockquote>
+<p>Javascript中，Math 对象是用于执行数学任务的对象(取整、取余。)</p>
+</blockquote>
+<h4 id="2-访问语法：MAth-属性名"><a href="#2-访问语法：MAth-属性名" class="headerlink" title="2.访问语法：MAth.属性名"></a>2.访问语法：MAth.属性名</h4><blockquote>
+<p>注释：Math 对象并不像 Date 和 String 那样是对象的类，因此没有构造函数 Math()，<br>像 Math.sin() 这样的函数只是函数，不是某个对象的方法。<br>您无需创建它，通过把 Math 作为对象使用就可以调用其所有属性和方法。</p>
+</blockquote>
+<h4 id="3-属性和方法"><a href="#3-属性和方法" class="headerlink" title="3.属性和方法"></a>3.属性和方法</h4><ul>
+<li>Math.Abs() 计算绝对值。  </li>
+<li>Math.Atan2() 计算从x 坐标轴到点的角度。  </li>
+<li>Math.Ceil() 将数字向上舍入为最接近的整数。  </li>
+<li>Math.Floor() 将数字向下舍入为最接近的整数。  </li>
+<li>Math.Max() 返回两个整数中较大的一个。  </li>
+<li>Math.Min() 返回两个整数中较小的一个。  </li>
+<li>Math.Pow() 计算x 的y 次方。  </li>
+<li>Math.Round() 四舍五入为最接近的整数。  </li>
+<li>Math.PI 一个圆的周长与其直径的比值（大约为3.14159）。  </li>
+<li>Math.SQRT1_2 1/2 的平方根的倒数（大约为0.707）。  </li>
+<li>Math.SQRT2 2 的平方根（大约为1.414）。</li>
+</ul>
+<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">namespace sample3_1MathClass</div><div class="line">&#123;</div><div class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Program</span></span></div><div class="line"><span class="class">    </span>&#123;</div><div class="line">        <span class="keyword">static</span> <span class="keyword">void</span> Main(string[] args)</div><div class="line">        &#123;</div><div class="line">            Console.WriteLine(<span class="string">"-12的绝对值为：&#123;0&#125;"</span>,<span class="built_in">Math</span>.Abs(<span class="number">-12</span>));</div><div class="line">            Console.WriteLine(<span class="string">"不小于-12.567的最小整数为：&#123;0&#125;"</span>, <span class="built_in">Math</span>.Ceiling(<span class="number">-12.567</span>));</div><div class="line">            Console.WriteLine(<span class="string">"不大于-12.567的最大整数为：&#123;0&#125;"</span>, <span class="built_in">Math</span>.Floor(<span class="number">-12.567</span>));</div><div class="line">            Console.WriteLine(<span class="string">"-12.567保留为小数的四舍五入值为：&#123;0&#125;"</span>, <span class="built_in">Math</span>.Round(<span class="number">-12.567</span>,<span class="number">2</span>));</div><div class="line">            Console.WriteLine(<span class="string">"2的指数函数为：&#123;0&#125;"</span>, <span class="built_in">Math</span>.Exp(<span class="number">2</span>));</div><div class="line">            Console.WriteLine(<span class="string">"2的立方为：&#123;0&#125;"</span>, <span class="built_in">Math</span>.Pow(<span class="number">2</span>,<span class="number">3</span>));</div><div class="line">            Console.WriteLine(<span class="string">"13.5/3余数为：&#123;0&#125;"</span>, <span class="built_in">Math</span>.IEEERemainder(<span class="number">13.5</span>,<span class="number">3</span>));</div><div class="line">            Console.ReadKey();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Date对象"><a href="#Date对象" class="headerlink" title="Date对象"></a>Date对象</h2><h4 id="1-作用-1"><a href="#1-作用-1" class="headerlink" title="1.作用 :"></a>1.作用 :</h4><blockquote>
+<p>Javascript中， Date 对象用于处理日期和时间</p>
+</blockquote>
+<h4 id="2-创建-Date-对象的语法："><a href="#2-创建-Date-对象的语法：" class="headerlink" title="2.创建 Date 对象的语法："></a>2.创建 Date 对象的语法：</h4><blockquote>
+<p>var myDate=new Date()</p>
+</blockquote>
+<h4 id="3-属性"><a href="#3-属性" class="headerlink" title="3.属性"></a>3.属性</h4><blockquote>
+<p>constructor返回对创建此对象的 Date 函数的引用<br>prototype使您有能力向对象添加属性和方法。</p>
+</blockquote>
+<h4 id="4-获取时间方法"><a href="#4-获取时间方法" class="headerlink" title="4.获取时间方法"></a>4.获取时间方法</h4><ul>
+<li>Date()返回当日的日期和时间</li>
+<li>getDate()从 Date 对象返回一个月中的某一天 (1 ~ 31)</li>
+<li>getDay()从 Date 对象返回一周中的某一天 (0 ~ 6)</li>
+<li>getMonth()从 Date 对象返回月份 (0 ~ 11)</li>
+<li>getFullYear()从 Date 对象以四位数字返回年份</li>
+<li>getHours()返回 Date 对象的小时 (0 ~ 23)</li>
+<li>getMinutes()返回 Date 对象的分钟 (0 ~ 59)</li>
+<li>getSeconds()返回 Date 对象的秒数 (0 ~ 59)</li>
+<li>getMilliseconds()返回 Date 对象的毫秒(0 ~ 999)</li>
+<li>getTime()返回 1970 年 1 月 1 日至今的毫秒数</li>
+</ul>
+<h4 id="5-获取时间的其他方法"><a href="#5-获取时间的其他方法" class="headerlink" title="5.获取时间的其他方法"></a>5.获取时间的其他方法</h4><ul>
+<li>getTimezoneOffset()返回本地时间不格林威治标准时间(GMT) 的分钟差</li>
+<li>getUTCDate()根据世界时从Date 对象返回月中的一天 (1~31)</li>
+<li>getUTCDay()根据世界时从 Date 对象返回周中的一天 (0 ~ 6)</li>
+<li>getUTCMonth()根据世界时从 Date 对象返回月份 (0 ~ 11)</li>
+<li>getUTCFullYear()根据世界时从 Date 对象返回四位数的年份</li>
+<li>getUTCHours()根据世界时返回 Date 对象的小时 (0 ~ 23)</li>
+<li>getUTCMinutes()根据世界时返回 Date 对象的分钟 (0 ~ 59)</li>
+<li>getUTCSeconds()根据世界时返回 Date 对象的秒钟 (0 ~ 59)</li>
+<li>getUTCMilliseconds()根据世界时返回 Date 对象的毫秒(0~ 999)</li>
+<li>parse()返回1970年1月1日午夜到指定日期（字符串）的毫秒数</li>
+</ul>
+<h4 id="6-设置时间方法："><a href="#6-设置时间方法：" class="headerlink" title="6.设置时间方法："></a>6.设置时间方法：</h4><ul>
+<li>setHours()设置 Date 对象中的小时 (0 ~ 23)</li>
+<li>setMinutes()设置 Date 对象中的分钟 (0 ~ 59)</li>
+<li>setSeconds()设置 Date 对象中的秒钟 (0 ~ 59)</li>
+<li>setMilliseconds()设置 Date 对象中的毫秒 (0 ~ 999)</li>
+<li>setTime()以毫秒设置 Date 对象</li>
+</ul>
+<h4 id="7-设置时间的其他方法"><a href="#7-设置时间的其他方法" class="headerlink" title="7.设置时间的其他方法"></a>7.设置时间的其他方法</h4><ul>
+<li>setUTCDate()根据世界时设置 Date 对象中月份的一天 (1 ~ 31)</li>
+<li>setUTCMonth()根据世界时设置 Date 对象中的月份 (0 ~ 11)</li>
+<li>setUTCFullYear()根据世界时设置 Date 对象中的年份（四位数字）</li>
+<li>setUTCHours()根据世界时设置 Date 对象中的小时 (0 ~ 23)</li>
+<li>setUTCMinutes()根据世界时设置 Date 对象中的分钟 (0 ~ 59)</li>
+<li>setUTCSeconds()根据世界时设置 Date 对象中的秒钟 (0 ~ 59)</li>
+<li>setUTCMilliseconds()根据世界时设置 Date 对象中的毫秒 (0 ~ 999)</li>
+</ul>
+<h4 id="8-Date的其他方法"><a href="#8-Date的其他方法" class="headerlink" title="8.Date的其他方法:"></a>8.Date的其他方法:</h4><ul>
+<li>toSource()返回该对象的源代码</li>
+<li>toString()把 Date 对象转换为字符串</li>
+<li>toTimeString()把 Date 对象的时间部分转换为字符串</li>
+<li>toDateString()把 Date 对象的日期部分转换为字符串</li>
+<li>toUTCString()根据世界时，把 Date 对象转换为字符串。</li>
+<li>toLocaleString()根据本地时间格式，把 Date 对象转换为字符串。</li>
+<li>toLocaleTimeString()根据本地时间格式，把 Date 对象的时间部分转换为字符串</li>
+<li>toLocaleDateString()根据本地时间格式，把 Date 对象的日期部分转换为字符串。</li>
+<li>UTC()根据世界时返回 1970 年 1 月 1 日 到指定日期的毫秒数。</li>
+<li>valueOf()返回 Date 对象的原始值</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/12/11/Math对象和Date对象/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/12/11/Math对象和Date对象/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
