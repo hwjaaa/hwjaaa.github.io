@@ -122,12 +122,51 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >demo</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://hwjaaa.github.io/img/window.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >windows中的方法</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="魔兽官网仿写"><a href="#魔兽官网仿写" class="headerlink" title="魔兽官网仿写"></a>魔兽官网仿写</h2><p>点击查看<a href="https://hwjaaa.github.io/demo/moshou/1020-01.html" target="_blank" rel="external">魔兽</a></p>
+                <h2 id="window对象事件"><a href="#window对象事件" class="headerlink" title="window对象事件"></a>window对象事件</h2><ul>
+<li><p>onscroll 当浏览器滚动的时候触发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div onscroll=&quot;myFunction()&quot;&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>onresize 当浏览器窗口改变大小时触发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">onresize=&quot;SomeJavaScriptCode&quot;</div></pre></td></tr></table></figure>
+</li>
+<li><p>鼠标滚轮事件</p>
+<blockquote>
+<p>鼠标滚轮事件的兼容性写法</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="built_in">document</span>.addEventListener)&#123;<span class="comment">//firefox</span></div><div class="line">	<span class="string">"DOMMousescro"</span>,<span class="string">"fn"</span>,<span class="literal">false</span></div><div class="line">	&#125;</div><div class="line"> <span class="built_in">window</span>.onmousewheel = <span class="built_in">document</span>.onmousewheel = scrollFunc; <span class="comment">//ie和谷歌</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>判断滚轮方向</p>
+</blockquote>
+<ul>
+<li>e.wheelDelta //ie和谷歌</li>
+<li>e.delta //火狐</li>
+</ul>
+<h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><h4 id="概念："><a href="#概念：" class="headerlink" title="概念："></a>概念：</h4><blockquote>
+<p>“Cookie” 是小量信息，某些 Web 站点在您的硬盘上用很小的文本文件存储的信息，<br>下次访问该站点时，可从浏览器读回此信息。</p>
+</blockquote>
+<h4 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h4><blockquote>
+<p>保存数据到客户端浏览器 。可用于：保存用户登录状态、跟踪用户行为（如保存地区）、定制页面样式、创建购物车</p>
+</blockquote>
+<h4 id="限制："><a href="#限制：" class="headerlink" title="限制："></a>限制：</h4><blockquote>
+<p>每个域最多保存50个cookie，单个cookie大小不能超过4k</p>
+</blockquote>
+<h4 id="储存方式："><a href="#储存方式：" class="headerlink" title="储存方式："></a>储存方式：</h4><blockquote>
+<p>document.cookie = ‘ 名字＝值; expires=过期时间’;</p>
+</blockquote>
+<ul>
+<li>在cookie的名或值中不能使用分号（;）、逗号（,）、等号（=）以及空格，<br>所以存储时需用escape()函数进行编码，它能将一些特殊符号使用十六进制表示，取用时再用unescape反编码</li>
+<li>过期时间是以GMT格式表示的时间字符串，超过这个时间，cookie将消失，过期时间设置为：当前时间+过期天数243600*1000</li>
+</ul>
+<h2 id="iframe操作"><a href="#iframe操作" class="headerlink" title="iframe操作"></a>iframe操作</h2><h4 id="操作子页面"><a href="#操作子页面" class="headerlink" title="操作子页面"></a>操作子页面</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.getElementById(‘iframe的ID’).contentWindow.document.getElementById(‘ 元素的ID’)</div></pre></td></tr></table></figure>
+<h4 id="操作父页面"><a href="#操作父页面" class="headerlink" title="操作父页面"></a>操作父页面</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.parent.document.getElementById(‘ 元素的ID’)</div></pre></td></tr></table></figure>
+<h4 id="操作顶级页面"><a href="#操作顶级页面" class="headerlink" title="操作顶级页面"></a>操作顶级页面</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">window.top.document.getElementById(‘ 元素的ID’)</div></pre></td></tr></table></figure>
 
             </div>
 
@@ -190,8 +229,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/12/14/demo/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/12/14/demo/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2017/12/23/windows中的方法/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/12/23/windows中的方法/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
