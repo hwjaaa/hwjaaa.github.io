@@ -122,48 +122,39 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://hwjaaa.github.io/img/4f0b60482a90b8adb0f5034690f7c7fd.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >JavaScript基础引入</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://hwjaaa.github.io/img/ajax.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >ajax</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="javascript基础"><a href="#javascript基础" class="headerlink" title="javascript基础"></a>javascript基础</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
-<li>轻量级、直译式客户端脚本语言。</li>
-<li>可被所有浏览器执行，实现网页的劢态功能。</li>
-<li>揑入 HTML 页面后，可由所有的现代浏览器执行<h4 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h4></li>
-<li>操作页面元素，动态改变页面内容动态改变表格内容</li>
-<li>编写页面动态效果轮播图层的切换 和 树形菜单等</li>
-<li>数据的客户端验证－减轻服务器端压力注册表单验证</li>
-<li>通过ajax和后端语言实现数据交互<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3></li>
-<li>ECMAscript<ul>
-<li>E 元素</li>
-<li>C 类名</li>
-<li>M 注释</li>
-<li>A 属性</li>
-</ul>
-</li>
-<li>BON(浏览器对象模型)</li>
-<li>DOM(文档对象模型)<h3 id="javascript-使用方法"><a href="#javascript-使用方法" class="headerlink" title="javascript 使用方法"></a>javascript 使用方法</h3></li>
-<li><p>html内嵌javascript代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt; //JavaScript 语句&lt;/script &gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>外部JS文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;hello.js&quot; language=&quot;javascript&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>行内编写方式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input name=&quot;btn&quot; type=&quot;button&quot; value=&quot;弹出消息框&quot;onclick=&quot;javascript:alert(&apos;欢迎你&apos;);&quot;/&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h3><ul>
-<li>onload事件:是在页面或图片加载完成后立即执行的事件获取元素</li>
-<li>getElementById()：获取指定 ID 的第一个对象引用</li>
-<li>getElementsByName()：通过NAME属性获Document中指定名称对象的集合</li>
-<li>getElementsByTagName()：使用指定的标签名返回所有的元<br>素，这些元素是您在使用此方法时所处的元素的后代<h3 id="输出方式"><a href="#输出方式" class="headerlink" title="输出方式"></a>输出方式</h3></li>
-<li>console.log</li>
-<li>document.write</li>
-<li>document。body。innerHTML<h3 id="代码注释方式"><a href="#代码注释方式" class="headerlink" title="代码注释方式"></a>代码注释方式</h3></li>
-<li>单行注释 //</li>
-<li>多行注释 /**/</li>
+                <h2 id="AJAX概念及form提交"><a href="#AJAX概念及form提交" class="headerlink" title="AJAX概念及form提交"></a>AJAX概念及form提交</h2><h3 id="ajax是什么？"><a href="#ajax是什么？" class="headerlink" title="ajax是什么？"></a>ajax是什么？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Asynchronous JavaScript and XML（异步JavaScript和XML)</div></pre></td></tr></table></figure>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>不重新加载整个页面的情况下，可以与服务器交换数据并更新部分网页内容。<br>节省用户操作，时间，提高用户体验，减少数据请求传输获取数据</p>
+<h3 id="方法："><a href="#方法：" class="headerlink" title="方法："></a>方法：</h3><blockquote>
+<p>open方法：</p>
+</blockquote>
+<p>1、初始化一个XMLHttpRequest对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var xhr = new XMLHttpRequest()：</div></pre></td></tr></table></figure></p>
+<p>2、打开链接<br>xhr.open（””）<br>有三个：参数：<br>第一个：请求方式；<br>第二个：请求地址<br>第三个同步还是异步</p>
+<p>3、发送数据；<br>xhr.send（）；</p>
+<p>4、xhr.responseXML<br>获取后台发来的xml格式数据</p>
+<p>5、获取数据<br>xhr.respoinseXML</p>
+<blockquote>
+<p>send方法</p>
+</blockquote>
+<p>发送数据请求，相当于Form的submit</p>
+<h3 id="AJAX请求状态监控"><a href="#AJAX请求状态监控" class="headerlink" title="AJAX请求状态监控"></a>AJAX请求状态监控</h3><pre><code>* onreadystatechange事件
+* readyState属性：请求状态
+* 0 （初始化）还没有调用open()方法
+* 1（载入）已调用send()方法，正在发送请求
+* 2（载入完成）send()方法完成，已收到全部响应内容
+* 3（解析）正在解析响应内容
+* 4（完成）响应内容解析完成，可以在客户端调用了
+* status属性：服务器(请求资源)的状态
+</code></pre><h2 id="form表单提交"><a href="#form表单提交" class="headerlink" title="form表单提交"></a>form表单提交</h2><ul>
+<li>表单form<br>action 提交到哪里<br>method 提交方式</li>
+<li>Get方式<br>Get通过url地址传输<br>有数据量限制，每个浏览器都不同<br>不安全</li>
+<li>Post方式<br>Post通过浏览器内部传输<br>数据量理论上无限<br>相对比较安全</li>
+<li>enctype : 提交的数据格式，默认application/x-www-form-urlencoded</li>
+<li>提交方式必须与后台的接收方式一致。</li>
 </ul>
 
             </div>
@@ -227,8 +218,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/11/26/JavaScript基础引入/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/11/26/JavaScript基础引入/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2018/03/15/ajax/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2018/03/15/ajax/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
